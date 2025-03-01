@@ -1,0 +1,18 @@
+/* 页面整体模糊 + 对比度 + 淡入效果 */
+.page {
+    filter: blur(10px) contrast(30) opacity(0); 
+    animation: fragment-aggregate1 4s forwards;
+}
+
+/* 顶部社区标题栏动画 */
+.fandom-community-header {
+    filter: blur(10px) contrast(30) opacity(0); 
+    animation: fragment-aggregate1 4s forwards;
+}
+
+/* 定义关键帧动画 */
+@keyframes fragment-aggregate1 {
+    0% { filter: blur(10px) contrast(30) opacity(0); }
+    70% { filter: blur(0px) contrast(30) opacity(1); }
+    100% { filter: blur(0px) contrast(1); }
+}
